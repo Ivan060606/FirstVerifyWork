@@ -3,14 +3,8 @@
         string v = "";
         string m = (t);
         int len = t.Length;
-        if (len < 4) 
-        {
-        return m;
-        }
-        else
-        {
-        return v;
-        }
+        if (len < 4) return m;
+        else return v;
     }
 void input(string h)
 {
@@ -29,5 +23,5 @@ void input(string h)
         Console.Write(h);
     }
 }
-string z = "Ваши строки: ";
+string z = "Ваши строки длиной до трёх символов: ";
 input(z);
