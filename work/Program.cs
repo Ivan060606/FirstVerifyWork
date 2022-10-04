@@ -12,7 +12,10 @@ void input(string h)
     string o = Console.ReadLine();
     if (o != "")
         {
+            if (search(o) != "")
+            {
             h = h + " " + search(o);
+            }
             input(h);
         }
     else
