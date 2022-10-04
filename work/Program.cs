@@ -1,24 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string search (string t)
+    {
+        string v = "";
+        string m = (t);
+        int len = t.Length;
+        if (len < 4) 
+        {
+        return m;
+        }
+        else
+        {
+        return v;
+        }
+    }
 void input(string h)
 {
     Console.WriteLine("Введите строку: ");
     string o = Console.ReadLine();
     if (o != "")
         {
-            if (o != "")
+            if (search(o) != "")
             {
-                if (o.length<4)
-                {
-                    h = h + " " + search(o);
-                }
+            h = h + " " + search(o);
             }
             input(h);
         }
     else
     {
-        Console.Write(h + " ");
+        Console.Write(h);
     }
 }
-string z = "";
+string z = "Ваши строки: ";
 input(z);
